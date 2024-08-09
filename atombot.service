@@ -1,0 +1,13 @@
+[Unit]
+Description=atombot service
+After=network.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/ey_atombot_v3.0/app
+Restart=always
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
